@@ -265,10 +265,10 @@ let YellowGreen = data.filter((element) => {
 
 let SteelBluefield = SteelBlue.map((element) => {
   return {
-    ...element, 
+    ...element,
     student: data.filter((element) =>  
 
-    element.group === "SteelBlue",  element.type === null,
+    element.group === "SteelBlue" && element.type === null,
     )
 }
 });
@@ -277,7 +277,7 @@ let Orchidfield = Orchid.map((element) => {
     ...element, 
     student: data.filter((element) =>  
 
-    element.group === "Orchid",  element.type === null,
+    element.group === "Orchid" &&  element.type === null,
     )
 }
 });
@@ -286,7 +286,7 @@ let LightSeaGreenfield = LightSeaGreen.map((element) => {
     ...element, 
     student: data.filter((element) =>  
 
-    element.group === "LightSeaGreen",  element.type === null,
+    element.group === "LightSeaGreen" &&  element.type === null,
     )
 }
 });
@@ -295,7 +295,7 @@ let IndianRedfield = IndianRed.map((element) => {
     ...element, 
     student: data.filter((element) =>  
 
-    element.group === "IndianRed",  element.type === null,
+    element.group === "IndianRed" &&  element.type === null,
     )
 }
 });
@@ -305,7 +305,7 @@ let YellowGreenfield = YellowGreen.map((element) => {
     ...element, 
     student: data.filter((element) =>  
 
-    element.group === "YellowGreen",  element.type === null,
+    element.group === "YellowGreen" &&  element.type === null,
     )
 }
 });
@@ -314,8 +314,3 @@ let YellowGreenfield = YellowGreen.map((element) => {
   console.log(SteelBluefield, Orchidfield,LightSeaGreenfield,IndianRedfield,YellowGreenfield)
 
   // ÇIKTI 1 SONU
-
-
-  // ÇIKTI 2 BAŞLANGICI
-
-
